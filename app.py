@@ -1,9 +1,6 @@
 import dash
 from dash import Dash, html
 
-from data.datamanagement import data_manager
-
-
 app = Dash(__name__, use_pages=True)
 
 app.layout = html.Div([
