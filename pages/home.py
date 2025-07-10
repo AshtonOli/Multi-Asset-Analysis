@@ -43,7 +43,13 @@ def update_portfolio_display() -> Tuple[List[Dict[str, Any]], go.Figure, go.Figu
         ],
         layout = go.Layout(
             xaxis = {"title" : "Datetime"},
-            yaxis = {"title" : "Portfolio Value ($)"}
+            yaxis = {
+                "title" : "Portfolio Value ($)",
+                "tickformat": ",.2f",
+                "tickprefix" : "$",
+                "ticksuffix" : " USD",
+
+                }
         )
     )
     
